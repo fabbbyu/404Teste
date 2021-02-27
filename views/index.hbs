@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/cropped-404-favicon-1-32x32.png" sizes="32x32" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Home</title>
+</head>
+<body class="bg-gradient-primary">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/img/logo.jpg" alt="404 Digital Media" title="404 Digital Media" id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid marginTop3">
+
+        <div class="row marginBottom3"><h4>Preencha os dados abaixo</h4></div>
+
+        <form class="was-validated" id="formDefault">
+
+            <div class="row marginBottom2">
+
+                <div class="form-group marginBottom2">
+                    <label for="name_input">Seu nome:</label>
+                    <input type="text" class="form-control custom-input" id="name_input" placeholder="Nome..." required>
+                    <div class="invalid-feedback">Por favor informe seu nome</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email_input">Seu e-mail:</label>
+                    <input type="email" class="form-control" id="email_input" placeholder="E-mail..." required onblur="checkValidate();">
+                    <div class="invalid-feedback">Por favor informe um e-mail válido</div>
+                </div>
+                
+            </div>
+
+            <div class="row marginBottom3"><h5>Responda as perguntas abaixo</h5></div>
+
+            <div class="row marginBottom2">
+
+                <h6>1) O que é mais importante para você?</h6>   
+
+                <div class="form-group">
+                    <select class="custom-select form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="Limite alto de crédito">Limite alto de crédito</option>
+                        <option value="Liberação imediata de crédito">Liberação imediata de crédito</option>
+                        <option value="Crédito sem consulta SPC/Serasa">Crédito sem consulta SPC/Serasa</option>
+                        <option value="Sem Tarifas">Sem Tarifas</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor selecione uma das opções para prosseguir</div>
+                </div>
+
+            </div>
+
+            <div class="row marginBottom2">
+
+                <h6>2) Em qual grupo você melhor se encaixa?</h6>   
+
+                <div class="form-group">
+                    <select class="custom-select form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="MEI/Autonomo/Empreendedor">MEI/Autonomo/Empreendedor</option>
+                        <option value="Carteira Assinada">Carteira Assinada</option>
+                        <option value="Desempregado">Desempregado</option>
+                        <option value="Aposentado/Pensionista/Servidor Público">Aposentado/Pensionista/Servidor Público</option>         
+                        <option value="Estudante/Concurseiro">Estudante/Concurseiro</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor selecione uma das opções para prosseguir</div>
+                </div>
+
+            </div>
+
+            <div class="row marginBottom2">
+
+                <h6>3) Você está negativado?</h6>   
+
+                <div class="form-group">
+                    <select class="custom-select form-control" id="negativadoSelect" required>
+                        <option value="">Selecione...</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>                     
+                    </select>
+                    <div class="invalid-feedback">Por favor selecione uma das opções para prosseguir</div>
+                </div>
+
+            </div>
+
+            <br />
+
+            <div class="row marginBottom3"><button type="submit" class="btn btn-primary">Enviar</button></div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/js/functions.js"></script>
+
+</body>
+</html>
